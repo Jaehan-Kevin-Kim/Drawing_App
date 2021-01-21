@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f6f9fc;
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .canvas {
+
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .controls__width {
+    margin-bottom: 15px;
+  }
+  
+  .controls__btns{
+    cursor: pointer;
+  }
+  .controls__btns > button {
+   
+    all: unset;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    color: rgba(0, 0, 0, 0.7);
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    margin: 0 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  .controls__types {
+    display: flex;
+    padding: 5px 5px;
+    margin: 20px 0 20px 0;
+  }
+  
+  .controls__type {
+    font-size: 50px;
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    padding: 10px 10px;
+    margin: 0 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  
+  }
+  
+  .controls__types .checked {
+    background: #2c2c2c;
+    color: #f6f9fc;
+  }
+  
+  .colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls__colors {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .controls__color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+  
+  .controls__colors .checked {
+    outline: 3px solid black;
+    box-shadow: 0 0 0 2px #88b8ff;
+    border-radius: 2px;
+  }
+  
+
+  .control__color__palette {
+    margin: 10px 0 20px 0;
+  }
+  
+  .control__color__palette input{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: none;
+  }
+  
+  .control__color__palette input.checked{
+  outline: 3px solid black;
+  outline-offset: 1px;
+  }
+  
+  
